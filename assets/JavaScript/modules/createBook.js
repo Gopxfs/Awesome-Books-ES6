@@ -1,8 +1,7 @@
-export const createNewBook = () => {
+export const createNewBook = (title, author) => {
   const newBook = {};
-  newBook.title = title.value;
-  newBook.author = author.value;
+  newBook.title = title;
+  newBook.author = author;
   newBook.index = Date.now();
-  library.add(newBook);
   return newBook;
 }
