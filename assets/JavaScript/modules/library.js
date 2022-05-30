@@ -3,15 +3,15 @@ export class Library {
     this.books = books;
   }
 
-  add(book) {
+  add = (book) => {
     this.books.push(book);
   }
 
-  remove(index) {
+  remove = (index) => {
     this.books.splice(this.getBook(index), 1);
   }
 
-  getBook(index) {
+  getBook = (index) => {
     for (let i = 0; i < this.books.length; i += 1) {
       if (Number(this.books[i].index) === Number(index)) {
         return i;
