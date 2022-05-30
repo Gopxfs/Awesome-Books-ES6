@@ -1,17 +1,20 @@
+// Imports section
 import { Library } from "./modules/library.js";
 import { storageData } from "./modules/storageData.js";
 import { createNewBookDiv } from "./modules/createBookDiv.js";
 import { createNewBook } from "./modules/createBook.js";
 import { populateData } from "./modules/populateData.js";
+import { DateTime } from "./modules/luxon.js";
 import { showElement } from "./modules/SPA.js";
-showElement();
-
+// Setting up HTML elements and page load settings
 const bookContainer = document.getElementById('book-list-container')
 const title = document.getElementById('newBookTitle');
 const author = document.getElementById('newBookAuthor');
 const addButton = document.getElementById('newBookAdd');
 let library = new Library();
 populateData(library);
+showElement();
+const date = DateTime.now().c;
 
 const removeBookDiv = (button, index) => {
   button.addEventListener('click', () => {
