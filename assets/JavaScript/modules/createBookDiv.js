@@ -19,4 +19,5 @@ export const createNewBookDiv = (title, author, index) => {
   bookDiv.classList.add('btn-div');
   bookTitle.innerHTML = title;
   bookAuthor.innerHTML = author;
+  return [listBook, removeButton];
 }

@@ -1,4 +1,4 @@
-const navBarAnchors = document.getElementsByClassName('navbar-list__items');
+const navBarAnchors = document.querySelectorAll('#navbar > ul > li');
 const bookSection = document.getElementsByClassName('book-list');
 const addBookSection = document.getElementsByClassName('add-book');
 const contactSection = document.getElementsByClassName('contact');
