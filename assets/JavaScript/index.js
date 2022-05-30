@@ -4,6 +4,7 @@ import { removeBookDiv } from "./modules/removeBookDiv";
 import { createNewBookDiv } from "./modules/createBookDiv";
 import { createNewBook } from "./modules/createBook";
 import { populateData } from "./modules/populateData";
+import * as SPA from "./modules/SPA";
 
 const bookContainer = document.getElementById('book-list-container')
 const title = document.getElementById('newBookTitle');
