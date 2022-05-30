@@ -1,4 +1,4 @@
-export function createNewBookDiv(title, author, index) {
+export const createNewBookDiv = (title, author, index) => {
   // creating html elements
   const listBook = document.createElement('li');
   const bookDiv = document.createElement('div');

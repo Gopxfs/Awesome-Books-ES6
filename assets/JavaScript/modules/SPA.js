@@ -3,7 +3,7 @@ const bookSection = document.getElementsByClassName('book-list');
 const addBookSection = document.getElementsByClassName('add-book');
 const contactSection = document.getElementsByClassName('contact');
 // Show the content that is clicked
-function showContent(position) {
+const showContent = (position) =>{
   if (position === 0) {
     bookSection[0].classList.remove('hideAll');
     addBookSection[0].classList.add('hideAll');

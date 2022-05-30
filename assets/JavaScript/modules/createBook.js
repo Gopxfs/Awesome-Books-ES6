@@ -1,4 +1,4 @@
-export function createNewBook() {
+export const createNewBook = () => {
   const newBook = {};
   newBook.title = title.value;
   newBook.author = author.value;
