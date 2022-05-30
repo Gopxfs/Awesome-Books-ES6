@@ -11,8 +11,6 @@ export const createNewBookDiv = (title, author, index) => {
   removeButton.innerHTML = 'Remove';
   removeButton.classList.add('remove-button');
   removeButton.setAttribute('id', `button${index}`);
-  removeBookDiv(removeButton, index);
-  bookContainer.appendChild(listBook);
   listBook.append(bookContentDiv, bookDiv);
   bookContentDiv.append(bookTitle, bookAuthor);
   bookContentDiv.classList.add('book-content');
