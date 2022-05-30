@@ -11,10 +11,13 @@ const bookContainer = document.getElementById('book-list-container')
 const title = document.getElementById('newBookTitle');
 const author = document.getElementById('newBookAuthor');
 const addButton = document.getElementById('newBookAdd');
+const date = document.getElementById('date');
 let library = new Library();
 populateData(library);
 showElement();
-const date = DateTime.now().c;
+const getDate = DateTime.now();
+date.innerHTML = `${getDate.monthLong} ${getDate.day} ${getDate.year}, ${getDate.hour}:${getDate.minute}:${getDate.second}`;
+console.log(getDate);
 
 const removeBookDiv = (button, index) => {
   button.addEventListener('click', () => {
