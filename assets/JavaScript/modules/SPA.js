@@ -1,26 +1,28 @@
 const navBarAnchors = document.querySelectorAll('#navbar > ul > li');
-const bookSection = document.getElementsByClassName('book-list');
-const addBookSection = document.getElementsByClassName('add-book');
-const contactSection = document.getElementsByClassName('contact');
+const bookSection = document.getElementById('book-list');
+const addBookSection = document.getElementById('add-book');
+const contactSection = document.getElementById('contact');
 // Show the content that is clicked
 const showContent = (position) =>{
   if (position === 0) {
-    bookSection[0].classList.remove('hideAll');
-    addBookSection[0].classList.add('hideAll');
-    contactSection[0].classList.add('hideAll');
+    bookSection.classList.remove('hideAll');
+    addBookSection.classList.add('hideAll');
+    contactSection.classList.add('hideAll');
   } else if (position === 1) {
-    bookSection[0].classList.add('hideAll');
-    addBookSection[0].classList.remove('hideAll');
-    contactSection[0].classList.add('hideAll');
+    bookSection.classList.add('hideAll');
+    addBookSection.classList.remove('hideAll');
+    contactSection.classList.add('hideAll');
   } else if (position === 2) {
-    bookSection[0].classList.add('hideAll');
-    addBookSection[0].classList.add('hideAll');
-    contactSection[0].classList.remove('hideAll');
+    bookSection.classList.add('hideAll');
+    addBookSection.classList.add('hideAll');
+    contactSection.classList.remove('hideAll');
   }
 }
 // Giving the event listener to the anchor tags
-for (let i = 0; i < navBarAnchors.length; i += 1) {
-  navBarAnchors[i].addEventListener('click', () => {
-    showContent(i);
-  });
-}
+export const showElement = () => {
+  for (let i = 0; i < navBarAnchors.length; i += 1) {
+    navBarAnchors[i].addEventListener('click', () => {
+      showContent(i);
+    });
+  }
+};

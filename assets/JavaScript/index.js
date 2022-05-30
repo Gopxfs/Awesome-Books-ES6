@@ -3,7 +3,8 @@ import { storageData } from "./modules/storageData.js";
 import { createNewBookDiv } from "./modules/createBookDiv.js";
 import { createNewBook } from "./modules/createBook.js";
 import { populateData } from "./modules/populateData.js";
-import * as SPA from "./modules/SPA.js";
+import { showElement } from "./modules/SPA.js";
+showElement();
 
 const bookContainer = document.getElementById('book-list-container')
 const title = document.getElementById('newBookTitle');
