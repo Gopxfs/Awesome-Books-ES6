@@ -1,7 +1,13 @@
 @import "../utilities/variables";
 
+// Hover
+#book-list-container li button:hover {
+  background-color: $light-grey;
+}
+
+// General
 #book-list {
-  display:flex;
+  display: flex;
   flex-direction: column;
   align-items: center;
 
@@ -32,12 +38,12 @@
       background-color: $dark-yellow;
 
       div {
-      display: flex;
-      flex-direction: row;
+        display: flex;
+        flex-direction: row;
       }
 
       p {
-        font-weight: 300;
+        font-weight: 400;
         color: #fff;
       }
 
@@ -48,15 +54,6 @@
         border: none;
         border-radius: 5px;
       }
-    }
-  }
-}
-
-// Hover
-#book-list-container {
-  li {
-    button:hover {
-      background-color: $light-grey;
     }
   }
 }

@@ -14,7 +14,7 @@ body {
 }
 
 .hideAll {
-  display: none!important;
+  display: none !important;
 }
 
 nav {
@@ -37,7 +37,7 @@ nav {
   }
 
   ul {
-    display:flex;
+    display: flex;
     flex-direction: row;
 
     li {
@@ -85,8 +85,6 @@ footer {
 }
 
 // Hover
-nav {
-  a:hover {
-    color: #fff;
-  }
+nav a:hover {
+  color: #fff;
 }
