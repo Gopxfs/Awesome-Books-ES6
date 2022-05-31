@@ -20,3 +20,5 @@ export class Library {
     return -1;
   }
 }
+
+export default 'Nothing was exported';

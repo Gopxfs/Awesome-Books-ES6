@@ -3,7 +3,7 @@ const bookSection = document.getElementById('book-list');
 const addBookSection = document.getElementById('add-book');
 const contactSection = document.getElementById('contact');
 // Show the content that is clicked
-const showContent = (position) =>{
+const showContent = (position) => {
   if (position === 0) {
     bookSection.classList.remove('hideAll');
     addBookSection.classList.add('hideAll');
@@ -17,7 +17,7 @@ const showContent = (position) =>{
     addBookSection.classList.add('hideAll');
     contactSection.classList.remove('hideAll');
   }
-}
+};
 // Giving the event listener to the anchor tags
 export const showElement = () => {
   for (let i = 0; i < navBarAnchors.length; i += 1) {
@@ -26,3 +26,5 @@ export const showElement = () => {
     });
   }
 };
+
+export default 'Nothing was exported';

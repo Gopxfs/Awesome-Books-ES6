@@ -4,4 +4,6 @@ export const createNewBook = (title, author) => {
   newBook.author = author;
   newBook.index = Date.now();
   return newBook;
-}
+};
+
+export default 'Nothing was exported';

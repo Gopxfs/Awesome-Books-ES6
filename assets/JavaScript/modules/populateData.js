@@ -6,3 +6,5 @@ export const populateData = (library) => {
     }
   }
 };
+
+export default 'Nothing was exported';

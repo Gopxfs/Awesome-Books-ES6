@@ -20,4 +20,6 @@ export const createNewBookDiv = (title, author, index) => {
   bookTitle.innerHTML = title;
   bookAuthor.innerHTML = author;
   return [listBook, removeButton];
-}
+};
+
+export default 'Nothing was exported';
