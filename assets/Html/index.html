@@ -3,14 +3,59 @@
 <head>
   <meta charset ='UTF-8'>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel='stylesheet' href="assets/Style/index.css">
+  <link rel="stylesheet" href="/assets/Style/index.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;400;600;700&display=swap" rel="stylesheet">
   <title>Awesome Books ES6</title>
 </head>
 
 <body>
+  <nav id="navbar">
+    <a>Awesome Books</a>
+    <ul>
+      <li> <a href="#"> List </a> </li>
+      <li> <a href="#"> Add new </a> </li>
+      <li> <a href="#"> Contact </a> </li>
+    </ul>
+  </nav>
 
+  <div id="date">
+  </div>
 
-  <script src="assets/JavaScript/index.js"></script>
+  <main>
+    <section id="book-list">
+      <h1>Awesome books list</h1>
+      <ul id="book-list-container"></ul>
+    </section>
+
+    <section id="add-book" class="hideAll">
+      <h2>Add a new book</h2>
+      <form action = "none">
+        <input type="text" name="newBookTitle" id="newBookTitle" placeholder="Title">
+        <input type="text" name="newBookAuthor" id="newBookAuthor" placeholder="Author">
+        <button type="button" id="newBookAdd">Add</button>
+      </form>
+    </section>
+
+    <section id="contact" class="hideAll">
+      <h2>Contact information</h2>
+      <p class="contact__text">Do you have any questions or just want to say 'Hello'?<br>
+        You can reach out to us!</p>
+      <ul>
+        <li>Our e-mail: gopxfs@hotmail.com</li>
+        <li>Our phone number: +55 912344321</li>
+        <li>Our address: Book street 1, 757678 California, US</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>2022 Awesome Books</p>
+    <p>Some rights reserved</p>
+  </footer>
+
+  <script type="module" src="/assets/JavaScript/index.js"></script>
 </body>
 
 </html>

@@ -1,3 +1,90 @@
+@import "./partials/bookList";
+@import "./partials/addNewBook";
+@import "./partials/contact";
+@import "./utilities/variables";
+
+// Global
 body {
   margin: 0;
+  background-color: $grey;
+
+  * {
+    font-family: $font-SSP;
+  }
+}
+
+.hideAll {
+  display: none !important;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  width: 100vw;
+  height: 55px;
+  background-color: $black;
+
+  a {
+    font-size: 18px;
+    color: $light-grey;
+    text-decoration: none;
+    margin: 20px;
+  }
+
+  ul {
+    display: flex;
+    flex-direction: row;
+
+    li {
+      list-style: none;
+      border-right: 1px $light-grey solid;
+    }
+
+    :last-child {
+      border-right: none;
+    }
+  }
+}
+
+#date {
+  position: absolute;
+  right: 0;
+  top: 0;
+  margin: 10px;
+  margin-top: 55px;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 85px;
+  margin-bottom: 100px;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 5%;
+  width: 100vw;
+  padding: 12px;
+  background-color: $black;
+
+  p {
+    font-size: 18px;
+    color: $light-grey;
+  }
+}
+
+// Hover
+nav a:hover {
+  color: #fff;
 }
