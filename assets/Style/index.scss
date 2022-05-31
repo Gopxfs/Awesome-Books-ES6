@@ -14,9 +14,14 @@ nav {
   position: fixed;
   width: 100vw;
   background-color: $black;
+  align-items: center;
+  justify-content: space-between;
 
   a {
+    font-family: $font-SSP;
     color: $light-grey;
+    text-decoration: none;
+    margin: 20px;
   }
 
   ul {
@@ -25,6 +30,11 @@ nav {
 
     li {
       list-style: none;
+      border-right: 1px $light-grey solid;
+    }
+
+    :last-child {
+      border-right: none;
     }
   }
 }

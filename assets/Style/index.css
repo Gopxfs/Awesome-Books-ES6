@@ -8,10 +8,15 @@ nav {
   position: fixed;
   width: 100vw;
   background-color: #1c2024;
+  align-items: center;
+  justify-content: space-between;
 }
 
 nav a {
+  font-family: "Source Sans Pro", sans-serif;
   color: #afafaf;
+  text-decoration: none;
+  margin: 20px;
 }
 
 nav ul {
@@ -21,5 +26,10 @@ nav ul {
 
 nav ul li {
   list-style: none;
+  border-right: 1px #afafaf solid;
+}
+
+nav ul :last-child {
+  border-right: none;
 }
 /*# sourceMappingURL=index.css.map */
