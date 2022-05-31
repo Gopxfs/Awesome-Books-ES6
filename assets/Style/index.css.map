@@ -1,8 +1,15 @@
 {
     "version": 3,
-    "mappings": "AACA,AAAA,IAAI,CAAC;EACH,MAAM,EAAE,CAAC;CACV",
+    "mappings": "AAMA,AAAA,IAAI,CAAC;EACH,MAAM,EAAE,CAAC;CACV;;AAED,AAAA,GAAG,CAAC;EACF,OAAO,EAAE,IAAI;EACb,cAAc,EAAE,GAAG;EACnB,QAAQ,EAAE,KAAK;EACf,KAAK,EAAE,KAAK;EACZ,gBAAgB,EEdV,OAAO;CF4Bd;;AAnBD,AAOE,GAPC,CAOD,CAAC,CAAC;EACA,KAAK,EEfI,OAAO;CFgBjB;;AATH,AAWE,GAXC,CAWD,EAAE,CAAC;EACD,OAAO,EAAC,IAAI;EACZ,cAAc,EAAE,GAAG;CAKpB;;AAlBH,AAeI,GAfD,CAWD,EAAE,CAIA,EAAE,CAAC;EACD,UAAU,EAAE,IAAI;CACjB",
     "sources": [
-        "index.scss"
+        "index.scss",
+        "partials/_bookList.scss",
+        "utilities/_variables.scss",
+        "partials/_addNewBook.scss",
+        "utilities/_variables.scss",
+        "partials/_contact.scss",
+        "utilities/_variables.scss",
+        "utilities/_variables.scss"
     ],
     "names": [],
     "file": "index.css"

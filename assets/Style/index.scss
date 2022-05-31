@@ -1,4 +1,30 @@
+@import "./partials/bookList";
+@import "./partials/addNewBook";
+@import "./partials/contact";
+@import "./utilities/variables";
+
 // Global
 body {
   margin: 0;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  position: fixed;
+  width: 100vw;
+  background-color: $black;
+
+  a {
+    color: $light-grey;
+  }
+
+  ul {
+    display:flex;
+    flex-direction: row;
+
+    li {
+      list-style: none;
+    }
+  }
 }

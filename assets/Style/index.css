@@ -1,4 +1,25 @@
 body {
   margin: 0;
 }
+
+nav {
+  display: flex;
+  flex-direction: row;
+  position: fixed;
+  width: 100vw;
+  background-color: #1c2024;
+}
+
+nav a {
+  color: #afafaf;
+}
+
+nav ul {
+  display: flex;
+  flex-direction: row;
+}
+
+nav ul li {
+  list-style: none;
+}
 /*# sourceMappingURL=index.css.map */
