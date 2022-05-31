@@ -13,7 +13,7 @@ body {
 }
 
 .hideAll {
-  display: none;
+  display: none!important;
 }
 
 nav {
@@ -23,6 +23,7 @@ nav {
   justify-content: space-between;
   position: fixed;
   top: 0;
+  z-index: 1;
   width: 100vw;
   height: 55px;
   background-color: $black;
@@ -79,5 +80,12 @@ footer {
   p {
     font-size: 18px;
     color: $light-grey;
+  }
+}
+
+// Hover
+nav {
+  a:hover {
+    color: #fff;
   }
 }
