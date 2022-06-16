@@ -7,9 +7,6 @@
 - SCSS
 - JavaScript
 
-## Live Demo:
-[Live Demo](https://gopxfs.github.io/Awesome-Books-ES6/dist)
-
 ## Getting Started:
 To access and change the code on your computer (using GIT):
 > Note: if you don't use git, you can download the ZIP of this repository by clicking on the "Code" button above the files list.
