@@ -8,7 +8,7 @@
 - JavaScript
 
 ## Live Demo:
-[Live Demo](https://gopxfs.github.io/Awesome-Books-ES6/)
+[Live Demo](https://gopxfs.github.io/Awesome-Books-ES6/dist)
 
 ## Getting Started:
 To access and change the code on your computer (using GIT):
